@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: #a239ca;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #0e0b16, #4717f6, #a239ca, #0e0b16);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    background: rgba(46, 21, 52, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a239ca;
+    max-width: 400px;  /* Ajusta el ancho máximo del contenedor */
+}
+
+h1 {
+    color: #4717f6;
+}
+
+.input-box, .result-box {
+    margin: 20px 0;
+}
+
+input {
+    width: calc(100% - 20px); /* Ajusta el ancho del input */
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #4717f6;
+    color: #fff;
+    margin-right: 10px;  /* Agrega un margen derecho para separar del borde */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #a239ca;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4717f6;
+}
+
+.result-box p {
+    background: #2e1534;
+    padding: 10px;
+    border-radius: 5px;
+    color: #e7dfdd;
+}

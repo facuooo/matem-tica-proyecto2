@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Función Lineal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Calculadora de Función Lineal</h1>
+        <div class="input-box">
+            <label for="a">Valor de A:</label>
+            <input type="number" id="a" placeholder="Ingrese el valor de A">
+            <label for="b">Valor de B:</label>
+            <input type="number" id="b" placeholder="Ingrese el valor de B">
+            <button onclick="calcular()">Calcular</button>
+        </div>
+        <div class="result-box">
+            <p id="raiz">Raíz: </p>
+            <p id="ordenada">Ordenada al origen: </p>
+            <p id="pendiente">Pendiente: </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
